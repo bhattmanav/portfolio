@@ -1,0 +1,26 @@
+.header-wrapper {
+  height: 96px;
+  background: var(--background-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 112px;
+}
+
+.header-nav-wrapper {
+  display: flex;
+  gap: 32px;
+}
+
+.header-nav {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.active {
+  background: var(--portfolio-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

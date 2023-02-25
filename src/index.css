@@ -1,13 +1,96 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600&display=swap");
+
+:root {
+  --background-color: linear-gradient(
+    180deg,
+    #010208 16.39%,
+    #010206 20.51%,
+    #040008 24.79%,
+    #010101 30.46%,
+    #010101 34.11%,
+    #010101 36.21%,
+    #010101 100%
+  );
+  --text-color: #ffffff;
+  --portfolio-gradient: linear-gradient(
+    99.05deg,
+    #bc3cd8 0.07%,
+    #c54b8c 106.32%
+  );
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  background: var(--background-color);
+  box-sizing: border-box;
+}
+
+.h1-light,
+.h2-light,
+.h3-light,
+.h4-light,
+.h5-light,
+.body-light,
+.button-light,
+.label-light {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.h1-semibold,
+.h2-semibold,
+.h3-semibold,
+.h4-semibold,
+.h5-semibold,
+.body-semibold,
+.button-semibold,
+.label-semibold {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.h1-semibold,
+.h1-light {
+  font-size: 56px;
+}
+
+.h2-semibold,
+.h2-light {
+  font-size: 40px;
+}
+
+.h3-semibold,
+.h3-light {
+  font-size: 32px;
+}
+
+.h4-semibold,
+.h4-light {
+  font-size: 24px;
+}
+
+.h5-semibold,
+.h5-light {
+  font-size: 16px;
+}
+
+.body-semibold,
+.body-light {
+  font-size: 18px;
+  text-transform: lowercase;
+}
+
+.button-semibold,
+.button-light {
+  font-size: 16px;
+}
+
+.label-semibold,
+.label-light {
+  font-size: 14px;
 }
