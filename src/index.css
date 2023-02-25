@@ -20,10 +20,11 @@
 }
 
 body {
-  margin: 0;
   font-family: "Work Sans", sans-serif;
   background: var(--background-color);
   box-sizing: border-box;
+  margin: 0 112px;
+  padding: 0;
 }
 
 .h1-light,

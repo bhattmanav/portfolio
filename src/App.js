@@ -1,13 +1,13 @@
 import { BrowserRouter } from "react-router-dom";
 import Header from "./header/Header";
+import Home from "./home/Home";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Header />
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Header />
+      <Home />
+    </BrowserRouter>
   );
 }
 

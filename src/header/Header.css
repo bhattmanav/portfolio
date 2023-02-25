@@ -5,7 +5,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 112px;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .header-nav-wrapper {

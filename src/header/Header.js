@@ -4,9 +4,9 @@ import logo from "../images/Dezign.png";
 import "./Header.css";
 
 const navigation = [
-  { name: "Home", href: "/demo" },
-  { name: "Work", href: "/demo1" },
-  { name: "About", href: "/demo2" },
+  { name: "Home", href: "/home" },
+  { name: "Work", href: "/work" },
+  { name: "About", href: "/about" },
 ];
 
 function Header() {
