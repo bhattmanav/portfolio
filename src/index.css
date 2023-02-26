@@ -12,6 +12,7 @@
     #010101 100%
   );
   --text-color: #ffffff;
+  --text-grey: rgba(227, 228, 230, 0.55);
   --portfolio-gradient: linear-gradient(
     99.05deg,
     #bc3cd8 0.07%,
@@ -19,12 +20,16 @@
   );
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Work Sans", sans-serif;
   background: var(--background-color);
-  box-sizing: border-box;
   margin: 0 112px;
   padding: 0;
+  /* overflow-x: hidden; */
 }
 
 .h1-light,

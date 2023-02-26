@@ -8,7 +8,7 @@ function Home() {
     <div className="home-wrapper">
       <p className="h1-light">
         Hi, my name is <span className="h1-semibold">Manav Bhatt.</span> A
-        software engineer who blends design and technology
+        Software Engineer who blends design and technology
         <span className="h1-semibold"> to create digital magic.</span>
       </p>
       <FontAwesomeIcon

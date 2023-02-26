@@ -1,0 +1,43 @@
+.about-me-wrapper {
+  height: 996px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-me-inner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-paragraph {
+  margin-right: 34px;
+}
+
+.about-me-paragraph.h3-light {
+  text-transform: none;
+  color: var(--text-grey);
+}
+
+.h3-semibold .h3-light {
+  text-transform: none;
+  color: var(--text-grey);
+}
+
+.about-me-paragraph .h3-semibold {
+  text-transform: none;
+}
+
+.about-me-images-wrapper {
+  height: 375px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.about-me-images-inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
