@@ -1,30 +1,32 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import logo from "../images/Dezign.png";
-import "./Header.css";
+import { NavHashLink } from "react-router-hash-link";
+import manavresume from "../files/manavresume.pdf";
+import "./header.css";
 
 const navigation = [
-  { name: "Home", href: "/home" },
-  { name: "Work", href: "/work" },
-  { name: "About", href: "/about" },
+  { name: "Home", href: "#home" },
+  { name: "Work", href: "#work" },
+  { name: "About", href: "#about" },
+  { name: "Resume", href: manavresume, target: "_blank" },
 ];
 
 function Header() {
   return (
     <div className="header-wrapper">
-      <img src={logo} alt="portfolio-logo" />
+      <span className="header-title">Manav</span>
 
       <div className="header-nav-wrapper label-semibold">
-        {navigation.map(({ name, href }) => (
-          <NavLink
+        {navigation.map(({ name, href, target }) => (
+          <NavHashLink
             key={name}
             to={href}
             className={({ isActive }) =>
-              `header-nav button-semibold ${isActive ? "active" : ""}`
+              `header-nav button-semibold ${isActive ? "" : "active"}`
             }
+            target={target}
           >
             {name}
-          </NavLink>
+          </NavHashLink>
         ))}
       </div>
     </div>

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Work+Sans:wght@300;600&display=swap");
 
 :root {
   --background-color: linear-gradient(
@@ -27,9 +27,20 @@
 body {
   font-family: "Work Sans", sans-serif;
   background: var(--background-color);
-  margin: 0 112px;
+  margin: 0;
   padding: 0;
-  /* overflow-x: hidden; */
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0 8vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0 4vw;
+  }
 }
 
 .h1-light,
@@ -62,41 +73,41 @@ body {
 
 .h1-semibold,
 .h1-light {
-  font-size: 56px;
+  font-size: 3.5rem;
 }
 
 .h2-semibold,
 .h2-light {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .h3-semibold,
 .h3-light {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .h4-semibold,
 .h4-light {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .h5-semibold,
 .h5-light {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .body-semibold,
 .body-light {
-  font-size: 18px;
+  font-size: 1.125rem;
   text-transform: lowercase;
 }
 
 .button-semibold,
 .button-light {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .label-semibold,
 .label-light {
-  font-size: 14px;
+  font-size: 0.875rem;
 }

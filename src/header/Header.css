@@ -8,7 +8,15 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+.header-title {
+  font-family: "Permanent Marker", cursive;
+  font-size: 34px;
+  /* color: var(--portfolio-gradient); */
+  background: var(--portfolio-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 .header-nav-wrapper {
   display: flex;
   gap: 32px;

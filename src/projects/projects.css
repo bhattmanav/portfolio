@@ -1,0 +1,145 @@
+.projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 0 20px;
+}
+
+.projects-header .h2-light {
+  text-transform: none;
+  color: var(--text-grey);
+}
+
+.projects-header .h2-semibold {
+  text-transform: none;
+}
+
+.project-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 594px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.project-image-right {
+  width: 100%;
+  max-width: 594px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.project-card-inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: white;
+  text-align: center;
+}
+
+.project-title {
+  margin: 0;
+}
+
+.project-description.h3-light {
+  text-transform: none;
+  color: var(--text-grey);
+}
+
+.project-description.h3-semibold {
+  text-transform: none;
+}
+
+.project-category.body-light {
+  text-transform: capitalize;
+  color: #e3e4e6;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.project-view-work {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+  width: 163px;
+  height: 40px;
+  border: 1px solid rgba(227, 228, 230, 0.55);
+  border-radius: 100px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.special {
+  background: linear-gradient(99.05deg, #bc3cd8 0.07%, #c54b8c 106.32%);
+  border: 1px solid #e3e4e6;
+  border-radius: 100px;
+}
+
+.project-view-work.button-light {
+  color: #e3e4e6;
+}
+
+@media only screen and (min-width: 768px) {
+  .projects-wrapper {
+    gap: 97px;
+    padding: 0;
+  }
+
+  .project-card-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .project-image {
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+
+  .project-image-right {
+    margin-bottom: 0;
+    margin-left: 32px;
+  }
+
+  .project-card-inner-wrapper {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .project-view-work.button-light.special {
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .projects-header {
+    margin-top: 96px;
+  }
+  .project-description {
+    font-size: 18px;
+  }
+
+  .project-category {
+    font-size: 16px;
+  }
+
+  .project-view-work {
+    font-size: 14px;
+  }
+}

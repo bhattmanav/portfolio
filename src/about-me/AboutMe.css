@@ -1,3 +1,4 @@
+/* About Me Section */
 .about-me-wrapper {
   height: 996px;
   display: flex;
@@ -29,6 +30,11 @@
   text-transform: none;
 }
 
+.about-me-image-guitar {
+  max-width: 100%;
+  max-height: 408px;
+}
+
 .about-me-images-wrapper {
   height: 375px;
   display: flex;
@@ -36,8 +42,121 @@
   gap: 32px;
 }
 
+.about-me-image {
+  flex-basis: 50%;
+  max-width: 600px;
+  max-height: 375px;
+}
+
 .about-me-images-inner-wrapper {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  margin-left: 32px;
+}
+
+@media (max-width: 1200px) {
+  .about-me-wrapper {
+    height: auto;
+    padding: 0 24px;
+  }
+
+  .about-me-inner-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-me-paragraph {
+    margin: 32px 0;
+  }
+
+  .about-me-images-wrapper {
+    height: auto;
+    justify-content: center;
+  }
+
+  .about-me-image {
+    flex-basis: 100%;
+    max-width: 100%;
+    max-height: none;
+  }
+
+  .about-me-images-inner-wrapper {
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .about-me-image-guitar {
+    max-width: 50%;
+    max-height: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-me-wrapper {
+    height: auto;
+    padding: 0 16px;
+  }
+
+  .about-me-inner-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-me-paragraph {
+    margin: 16px 0;
+  }
+
+  .about-me-images-wrapper {
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .about-me-image {
+    flex-basis: 100%;
+    max-width: 100%;
+    max-height: none;
+    margin-bottom: 16px;
+  }
+
+  .about-me-images-inner-wrapper {
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 0;
+  }
+
+  .h3-semibold,
+  .h3-light {
+    font-size: 1.25rem;
+  }
+
+  .about-me-paragraph {
+    font-size: 1.25rem;
+  }
+
+  .about-me-image-guitar {
+    max-width: 50%;
+    max-height: none;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-me-paragraph {
+    font-size: 0.875rem;
+  }
+
+  .h3-semibold,
+  .h3-light {
+    font-size: 0.875rem;
+  }
+
+  .about-me-image-guitar {
+    max-width: 80%;
+    max-height: none;
+  }
 }

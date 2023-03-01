@@ -1,12 +1,12 @@
 import React from "react";
-import "./AboutMe.css";
+import "./aboutMe.css";
 import music from "../images/music.png";
 import games from "../images/games.png";
 import travelling from "../images/travelling.png";
 
 function AboutMe() {
   return (
-    <div className="about-me-wrapper">
+    <div className="about-me-wrapper" id="about">
       <div className="about-me-inner-wrapper">
         <div className="about-me-title">
           <span className="h4-semibold">a bit about me</span>
@@ -21,12 +21,10 @@ function AboutMe() {
             </span>
           </p>
         </div>
-        <div className="about-me-images-wrapper">
-          <img src={music} alt="guitar" />
-          <div className="about-me-images-inner-wrapper">
-            <img src={games} alt="games" />
-            <img src={travelling} alt="travelling" />
-          </div>
+        <img src={music} alt="guitar" className="about-me-image-guitar" />
+        <div className="about-me-images-inner-wrapper">
+          <img src={games} alt="games" className="about-me-image" />
+          <img src={travelling} alt="travelling" className="about-me-image" />
         </div>
       </div>
     </div>
